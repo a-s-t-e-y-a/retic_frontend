@@ -188,7 +188,7 @@ export default function LandinngPageOne() {
       </div>
       
       {/* footer */}
-      <div className="mx-auto mt-12 max-w-7xl">
+      {/* <div className="mx-auto mt-12 max-w-7xl">
         <footer className="px-4 py-10">
           <div className="flex flex-col md:flex-row md:items-center">
             <span>
@@ -264,7 +264,7 @@ export default function LandinngPageOne() {
             </div>
           </div>
         </footer>
-      </div>
+      </div> */}
     </div>
   
   )

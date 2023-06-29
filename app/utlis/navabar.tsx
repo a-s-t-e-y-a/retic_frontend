@@ -6,21 +6,22 @@ import { Menu, X } from "lucide-react";
 interface MenuItem {
   name: string;
   href: string;
-}
-const menuItems = [
+} 
+const menuItems: MenuItem[]  = [
   {
     name: "Home",
     href: "#",
   },
   {
-    name: "About",
+    name: "Buy tickets",
     href: "#",
   },
   {
-    name: "Contact",
+    name: "Sell tickets",
     href: "#",
   },
 ];
+const buttonText : string = "Login / signup"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -31,7 +32,7 @@ export default function Navbar() {
 
   return (
     <div className="relative w-full bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 md:px-12 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
             <svg
@@ -47,7 +48,7 @@ export default function Navbar() {
               />
             </svg>
           </span>
-          <span className="font-bold">DevUI</span>
+          <span className="font-bold">RETic</span>
         </div>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
@@ -68,7 +69,7 @@ export default function Navbar() {
             type="button"
             className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
-            Button text
+             {buttonText}
           </button>
         </div>
         <div className="lg:hidden">
@@ -94,7 +95,7 @@ export default function Navbar() {
                         />
                       </svg>
                     </span>
-                    <span className="font-bold">DevUI</span>
+                    <span className="font-bold">RETic</span>
                   </div>
                   <div className="-mr-2">
                     <button
@@ -126,7 +127,7 @@ export default function Navbar() {
                   type="button"
                   className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                 >
-                  Button text
+                  {buttonText}
                 </button>
               </div>
             </div>
