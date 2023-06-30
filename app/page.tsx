@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "./utlis/navabar";
 import LandinngPageOne from "./component/hero";
 import CardThree from "./components/cards";
+import FooterBar from "./component/footer";
 export default function Index() {
   return (
    
@@ -39,6 +40,8 @@ export default function Index() {
           </div>
         </div>
       </div>
+      <FooterBar />
+      
     </>
 
   )
