@@ -1,34 +1,34 @@
-"use client";
+'use client'
 
-import React from "react";
-import { Menu, X } from "lucide-react";
-
+import React from 'react'
+import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
 interface MenuItem {
-  name: string;
-  href: string;
-} 
-const menuItems: MenuItem[]  = [
+  name: string
+  href: string
+}
+const menuItems: MenuItem[] = [
   {
-    name: "Home",
-    href: "#",
+    name: 'Home',
+    href: '#',
   },
   {
-    name: "Buy tickets",
-    href: "#",
+    name: 'Buy tickets',
+    href: '#',
   },
   {
-    name: "Sell tickets",
-    href: "#",
+    name: 'Sell tickets',
+    href: '#',
   },
-];
-const buttonText : string = "Login / signup"
+]
+const buttonText: string = 'Login / signup'
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+    setIsMenuOpen(!isMenuOpen)
+  }
 
   return (
     <div className="relative w-full bg-white">
@@ -67,9 +67,9 @@ export default function Navbar() {
         <div className="hidden lg:block">
           <button
             type="button"
-            className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+            className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
-             {buttonText}
+            <Link href="/signup">{buttonText}</Link>
           </button>
         </div>
         <div className="lg:hidden">
@@ -123,11 +123,12 @@ export default function Navbar() {
                     ))}
                   </nav>
                 </div>
+
                 <button
                   type="button"
                   className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                 >
-                  {buttonText}
+                  <Link href="/signup">{buttonText}</Link>
                 </button>
               </div>
             </div>
@@ -135,5 +136,5 @@ export default function Navbar() {
         )}
       </div>
     </div>
-  );
+  )
 }

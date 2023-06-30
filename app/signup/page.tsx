@@ -1,47 +1,43 @@
-"use client";
-import React, { useState } from "react";
-import { ArrowRight } from "lucide-react";
+'use client'
+import React, { useState } from 'react'
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function SignInOne() {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
-  const [emailError, setEmailError] = useState<string>("");
-  const [passwordError, setPasswordError] = useState<string>("");
+  const [email, setEmail] = useState<string>('')
+  const [password, setPassword] = useState<string>('')
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+    e.preventDefault()
 
     // Reset previous error messages
-    setEmailError("");
-    setPasswordError("");
 
     // Validate email
     if (!isValidEmail(email)) {
-      setEmailError("Please enter a valid email address.");
-     alert("invalid email")
-      return;
+      alert('Please enter a valid email address.')
+      return
     }
 
     // Validate password
     if (!isValidPassword(password)) {
-      setPasswordError("Password must be at least 6 characters long.");
-      return;
+      alert('Password must be at least 6 characters long.')
+      return
     }
 
     // If all validations pass, submit the form
     // Your submission logic here
-  };
+  }
 
   const isValidEmail = (email: string): boolean => {
     // Use a regular expression to validate email format
-    const emailRegex: RegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
+    const emailRegex: RegExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return emailRegex.test(email)
+  }
 
   const isValidPassword = (password: string): boolean => {
     // Check if password length is at least 6 characters
-    return password.length >= 6;
-  };
+    return password.length >= 6
+  }
 
   return (
     <section>
@@ -65,15 +61,15 @@ export default function SignInOne() {
             Sign up to create account
           </h2>
           <p className="mt-2 text-center text-base text-gray-600">
-            Already have an account?{" "}
-            <a
-              href="#"
-              title=""
+            Already have an account?{' '}
+            <Link
+              href="/login"
               className="font-medium text-black transition-all duration-200 hover:underline"
             >
-              Sign In
-            </a>
+              Log In
+            </Link>
           </p>
+
           <form onSubmit={handleSubmit} className="mt-8">
             <div className="space-y-5">
               <div>
@@ -81,8 +77,8 @@ export default function SignInOne() {
                   htmlFor="email"
                   className="text-base font-medium text-gray-900"
                 >
-                  {" "}
-                  Email address{" "}
+                  {' '}
+                  Email address{' '}
                 </label>
                 <div className="mt-2">
                   <input
@@ -101,8 +97,8 @@ export default function SignInOne() {
                     htmlFor="password"
                     className="text-base font-medium text-gray-900"
                   >
-                    {" "}
-                    Password{" "}
+                    {' '}
+                    Password{' '}
                   </label>
                 </div>
                 <div className="mt-2">
@@ -119,7 +115,6 @@ export default function SignInOne() {
               <div>
                 <button
                   type="submit"
-                 
                   className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
                 >
                   Create Account <ArrowRight className="ml-2" size={16} />
@@ -164,5 +159,5 @@ export default function SignInOne() {
         </div>
       </div>
     </section>
-  );
+  )
 }
