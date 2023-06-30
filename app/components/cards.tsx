@@ -6,7 +6,7 @@ const ButtonComponent = () => {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push('/component/productpage.tsx'); // Route to the 'TargetComponent'
+    router.push('/product/'); // Route to the 'TargetComponent'
   };
 
   return (

@@ -4,7 +4,8 @@ import React from "react";
 import Navbar from "./utlis/navabar";
 import LandinngPageOne from "./component/hero";
 import CardThree from "./components/cards";
-import FooterBar from "./component/footer";
+import FooterBar from "./utlis/footer";
+
 export default function Index() {
   return (
    
