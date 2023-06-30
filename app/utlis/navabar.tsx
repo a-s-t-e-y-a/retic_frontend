@@ -9,7 +9,7 @@ interface MenuItem {
 }
 const menuItems: MenuItem[] = [
   {
-    name: 'Home',
+    name: 'Sell tickets',
     href: '#',
   },
   {
@@ -17,7 +17,7 @@ const menuItems: MenuItem[] = [
     href: '#',
   },
   {
-    name: 'Sell tickets',
+    name: 'About',
     href: '#',
   },
 ]
