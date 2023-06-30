@@ -1,16 +1,14 @@
-"use client";
+'use client'
 
-import React from "react";
-import Navbar from "./utlis/navabar";
-import LandinngPageOne from "./component/hero";
-import CardThree from "./components/cards";
+import React from 'react'
+import Navbar from './utlis/navabar'
+import Hero from './components/hero'
+import CardThree from './components/cards'
 export default function Index() {
   return (
-   
-      <>
-    
+    <>
       <Navbar />
-      <LandinngPageOne />
+      <Hero />
       <div className="flex justify-center items-center ">
         <div>
           <div className="font-semibold py-16 underline underline-offset-1">
@@ -40,8 +38,5 @@ export default function Index() {
         </div>
       </div>
     </>
-
   )
 }
-
-
