@@ -1,7 +1,14 @@
-import React from 'react'
-import { ArrowUpRight } from 'lucide-react'
+import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
+import { useRouter } from 'next/navigation'; // Fixed import statement
 
-export default function CardThree() {
+const ButtonComponent = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/component/productpage.tsx'); // Route to the 'TargetComponent'
+  };
+
   return (
     <div className="w-[350px] rounded-md border">
       <img
@@ -28,12 +35,19 @@ export default function CardThree() {
           </span>
         </div>
         <button
-          type="button"
+          type="button" 
+          onClick={handleClick}
           className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
           Buy your happiness
         </button>
       </div>
     </div>
-  )
+  );
+};
+
+export default function CardThree() {
+  return (
+    <ButtonComponent /> // Render the ButtonComponent
+  );
 }
