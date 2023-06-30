@@ -65,6 +65,7 @@ export default function SignInOne() {
             Login to your account
           </h2>
           <p className="mt-2 text-center text-base text-gray-600">
+               {/* eslint-disable-next-line react/no-unescaped-entities */}
             Don't have an account{" "}
             <a
               href="#"
