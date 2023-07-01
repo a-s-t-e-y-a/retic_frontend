@@ -17,6 +17,10 @@ const menuItems: MenuItem[] = [
     href: '/buy/',
   },
   {
+    name: 'Cart',
+    href: '/cart/',
+  },
+  {
     name: 'About',
     href: '/about/',
   },
