@@ -1,10 +1,10 @@
 'use client'
 
-import React from "react";
-import Navbar from "./utlis/navabar";
-import Hero from "./components/hero";
-import CardThree from "./components/cards";
-import FooterBar from "./utlis/footer";
+import React from 'react'
+import Navbar from './utlis/navabar'
+import Hero from './components/hero'
+import CardThree from './components/cards'
+import FooterBar from './utlis/footer'
 
 export default function Index() {
   return (
@@ -40,7 +40,6 @@ export default function Index() {
         </div>
       </div>
       <FooterBar />
-      
     </>
   )
 }

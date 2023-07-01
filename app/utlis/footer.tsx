@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react'
 export default function FooterBar() {
   return (
     <>
-     {/* footer */}
+      {/* footer */}
       <div className="mx-auto mt-12 max-w-7xl">
         <footer className="px-4 py-10">
           <div className="flex flex-col md:flex-row md:items-center">
@@ -30,7 +30,9 @@ export default function FooterBar() {
           </div>
           <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             <div className="mb-8 lg:mb-0">
-              <p className="mb-6 text-lg font-semibold text-gray-700">Company</p>
+              <p className="mb-6 text-lg font-semibold text-gray-700">
+                Company
+              </p>
               <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
                 <li>About us</li>
                 <li>Company History</li>
@@ -40,7 +42,9 @@ export default function FooterBar() {
               </ul>
             </div>
             <div className="mb-8 lg:mb-0">
-              <p className="mb-6 text-lg font-semibold text-gray-700">Our Stores</p>
+              <p className="mb-6 text-lg font-semibold text-gray-700">
+                Our Stores
+              </p>
               <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
                 <li>Washington</li>
                 <li>New Hampshire</li>
@@ -50,7 +54,9 @@ export default function FooterBar() {
               </ul>
             </div>
             <div className="mb-8 lg:mb-0">
-              <p className="mb-6 text-lg font-semibold text-gray-700">Services</p>
+              <p className="mb-6 text-lg font-semibold text-gray-700">
+                Services
+              </p>
               <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
                 <li>UI / UX Design</li>
                 <li>App Development</li>
@@ -70,7 +76,9 @@ export default function FooterBar() {
               </ul>
             </div>
             <div className="mb-8 lg:mb-0">
-              <p className="mb-6 text-lg font-semibold text-gray-700">Social Links</p>
+              <p className="mb-6 text-lg font-semibold text-gray-700">
+                Social Links
+              </p>
               <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
                 <li>Facebook</li>
                 <li>Twitter</li>
@@ -81,7 +89,7 @@ export default function FooterBar() {
             </div>
           </div>
         </footer>
-      </div> 
-      </>
+      </div>
+    </>
   )
 }
