@@ -10,6 +10,7 @@ const ButtonComponent = () => {
   };
 
   return (
+    <>
     <div className="w-[350px] rounded-md border">
       <img
         src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=90"
@@ -39,11 +40,12 @@ const ButtonComponent = () => {
           type="button" 
           onClick={handleClick}
           className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-        >
+          >
           Buy your happiness
         </button>
       </div>
     </div>
+    </>
   );
 };
 
