@@ -34,7 +34,8 @@ const locations = [
   {
     title: 'Karnataka office',
     timings: 'Mon-Sat 9am to 5pm.',
-    address: '42, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025 IN',
+    address:
+      '42, Residency Rd, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025 IN',
   },
 ]
 
@@ -103,111 +104,126 @@ export default function AboutPageOne() {
         {/* Hero Map */}
         <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">
           <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
-            <p className="text-xs font-semibold leading-normal md:text-sm">About the company</p>
+            <p className="text-xs font-semibold leading-normal md:text-sm">
+              About the company
+            </p>
           </div>
           <p className="text-3xl font-bold text-gray-900 md:text-5xl md:leading-10">
             RETIC - Ticket Reselling
           </p>
           <p className="max-w-4xl text-base text-gray-600 md:text-xl">
-          RETIC is a ticket reshelling company that helps individuals and organizations resell their event tickets securely and efficiently. We understand that sometimes plans change, and it can be challenging to find a suitable buyer for your tickets. Our platform provides a trusted marketplace for ticket sellers and buyers, ensuring a smooth and reliable experience for both parties.
+            RETIC is a ticket reshelling company that helps individuals and
+            organizations resell their event tickets securely and efficiently.
+            We understand that sometimes plans change, and it can be challenging
+            to find a suitable buyer for your tickets. Our platform provides a
+            trusted marketplace for ticket sellers and buyers, ensuring a smooth
+            and reliable experience for both parties.
           </p>
         </div>
         <div className="mx-auto my-32 max-w-7xl px-2 lg:px-8">
-        <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
-          <div>
-            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
-              <svg
-                className="h-9 w-9 text-blue-600"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-                />
-              </svg>
+          <div className="grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
+            <div>
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-100">
+                <svg
+                  className="h-9 w-9 text-blue-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-lg font-semibold text-black">
+                Secured Payments
+              </h3>
+              <p className="mt-4 text-sm text-gray-600">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
-            <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
-            </p>
-          </div>
-          <div>
-            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-orange-100">
-              <svg
-                className="h-9 w-9 text-orange-600"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
+            <div>
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-orange-100">
+                <svg
+                  className="h-9 w-9 text-orange-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-lg font-semibold text-black">
+                Fast & Easy to Load
+              </h3>
+              <p className="mt-4 text-sm text-gray-600">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Fast & Easy to Load</h3>
-            <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
-            </p>
-          </div>
-          <div>
-            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
-              <svg
-                className="h-9 w-9 text-green-600"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                />
-              </svg>
+            <div>
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
+                <svg
+                  className="h-9 w-9 text-green-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-lg font-semibold text-black">
+                Light & Dark Version
+              </h3>
+              <p className="mt-4 text-sm text-gray-600">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Light & Dark Version</h3>
-            <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
-            </p>
-          </div>
-          <div>
-            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-red-100">
-              <svg
-                className="h-9 w-9 text-red-600"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
-                />
-              </svg>
+            <div>
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-red-100">
+                <svg
+                  className="h-9 w-9 text-red-600"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-lg font-semibold text-black">
+                Filter Blocks
+              </h3>
+              <p className="mt-4 text-sm text-gray-600">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
             </div>
-            <h3 className="mt-8 text-lg font-semibold text-black">Filter Blocks</h3>
-            <p className="mt-4 text-sm text-gray-600">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-              officia consequat duis enim velit mollit.
-            </p>
           </div>
         </div>
-      </div>
         <div className="w-full space-y-4">
           <img
             className="h-[200px] w-full rounded-xl object-cover md:h-full"
@@ -218,10 +234,17 @@ export default function AboutPageOne() {
         {/* locations */}
         <div className="my-8 flex flex-col gap-y-6 md:flex-row lg:justify-around">
           {locations.map((location) => (
-            <div key={location.title} className="flex flex-col space-y-3 md:w-2/4 lg:w-1/5">
+            <div
+              key={location.title}
+              className="flex flex-col space-y-3 md:w-2/4 lg:w-1/5"
+            >
               <MapPin className="h-5 w-5" />
-              <p className="w-full text-xl font-semibold  text-gray-900">{location.title}</p>
-              <p className="w-full text-base text-gray-700">{location.timings}</p>
+              <p className="w-full text-xl font-semibold  text-gray-900">
+                {location.title}
+              </p>
+              <p className="w-full text-base text-gray-700">
+                {location.timings}
+              </p>
               <p className="text-sm font-medium">{location.address}</p>
             </div>
           ))}
@@ -231,12 +254,17 @@ export default function AboutPageOne() {
         <div className="mt-16 flex items-center">
           <div className="space-y-6 md:w-3/4">
             <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
-              <p className="text-xs font-semibold leading-normal md:text-sm">Join Us &rarr;</p>
+              <p className="text-xs font-semibold leading-normal md:text-sm">
+                Join Us &rarr;
+              </p>
             </div>
-            <p className="text-3xl font-bold text-gray-900 md:text-4xl">Meet our team</p>
+            <p className="text-3xl font-bold text-gray-900 md:text-4xl">
+              Meet our team
+            </p>
             <p className="max-w-4xl text-base text-gray-700 md:text-xl">
-              Our philosophy is simple — hire a team of diverse, passionate people and foster a
-              culture that empowers you to do your best work.
+              Our philosophy is simple — hire a team of diverse, passionate
+              people and foster a culture that empowers you to do your best
+              work.
             </p>
             <div></div>
           </div>
@@ -250,7 +278,9 @@ export default function AboutPageOne() {
                 alt={user.name}
                 className="h-[300px] w-full rounded-lg object-cover "
               />
-              <p className="mt-6 w-full px-2 text-xl  font-semibold text-gray-900">{user.name}</p>
+              <p className="mt-6 w-full px-2 text-xl  font-semibold text-gray-900">
+                {user.name}
+              </p>
               <p className="w-full px-2 pb-6 text-sm font-semibold text-gray-500">
                 {user.position}
               </p>
@@ -260,11 +290,16 @@ export default function AboutPageOne() {
         {/* Hiring Banner */}
         <div className="flex flex-col items-center gap-x-4 gap-y-4 py-16 md:flex-row">
           <div className="space-y-6">
-            <p className="text-sm font-semibold md:text-base">Join our team &rarr;</p>
-            <p className="text-3xl font-bold md:text-4xl">We&apos;re just getting started</p>
+            <p className="text-sm font-semibold md:text-base">
+              Join our team &rarr;
+            </p>
+            <p className="text-3xl font-bold md:text-4xl">
+              We&apos;re just getting started
+            </p>
             <p className="text-base text-gray-600 md:text-lg">
-              Our philosophy is simple — hire a team of diverse, passionate people and foster a
-              culture that empowers you to do your best work.
+              Our philosophy is simple — hire a team of diverse, passionate
+              people and foster a culture that empowers you to do your best
+              work.
             </p>
             <button
               type="button"

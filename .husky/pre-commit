@@ -8,12 +8,7 @@ npm run format ||
     false;
 )
 echo '✅✅✅✅ Dont worry i am doing formatting for you .......!!!!!!!!. ✅✅✅✅'
-npm run format:fix ||
-(
-    echo '🤢🤮🤢🤮 Its F**KING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
-            Prettier Check Failed. Run npm run format, add changes and try commit again.';
-    false;
-)
+npm run format:fix
 # If everything passes... Now we can commit
 echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'
 
