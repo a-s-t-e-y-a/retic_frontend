@@ -14,11 +14,11 @@ const menuItems: MenuItem[] = [
   },
   {
     name: 'Buy tickets',
-    href: '#',
+    href: '/buy/',
   },
   {
     name: 'About',
-    href: '#',
+    href: '/about/',
   },
 ]
 const buttonText: string = 'Login / signup'
