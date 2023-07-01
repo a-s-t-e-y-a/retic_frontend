@@ -12,7 +12,7 @@ export default function ProductThree() {
       </h1>
       <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
         {Array.from({ length: 4 }).map((_, i) => (
-          <Showcase />
+          <Showcase key={i} />
         ))}
       </div>
 
@@ -21,7 +21,7 @@ export default function ProductThree() {
       </h1>
       <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
         {Array.from({ length: 4 }).map((_, i) => (
-          <Showcase />
+          <Showcase key={i} />
         ))}
       </div>
       <h1 className="font-bold mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-1 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
@@ -29,7 +29,7 @@ export default function ProductThree() {
       </h1>
       <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
         {Array.from({ length: 4 }).map((_, i) => (
-          <Showcase />
+          <Showcase key={i} />
         ))}
       </div>
       <FooterBar />
