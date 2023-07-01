@@ -33,6 +33,7 @@ export default function Navbar() {
   return (
     <div className="relative w-full bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 md:px-12 lg:px-8">
+        <Link href="/">
         <div className="inline-flex items-center space-x-2">
           <span>
             <svg
@@ -50,6 +51,7 @@ export default function Navbar() {
           </span>
           <span className="font-bold">RETic</span>
         </div>
+        </Link>
         <div className="hidden lg:block">
           <ul className="inline-flex space-x-8">
             {menuItems.map((item) => (
