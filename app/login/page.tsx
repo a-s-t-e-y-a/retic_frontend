@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
-import Image from 'next/image';
+import Image from 'next/image'
 import backbuttonimg from '../icons/backbutton.png'
 
 export default function SignInOne() {
@@ -43,15 +43,19 @@ export default function SignInOne() {
 
   return (
     <section>
-      
       <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
-      
         <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
-        <Link href="/">
-        <button>
-          <Image src={backbuttonimg} alt='Go Back' className='w-4 md:w-7 lg:7'/>
-        </button>
-      </Link>
+          <Link href="/">
+            <div className="flex justify-end">
+              <div>
+                <Image
+                  src={backbuttonimg}
+                  alt="Go Back"
+                  className="w-4 md:w-7 lg:7"
+                />
+              </div>
+            </div>
+          </Link>
           <div className="mb-2 flex justify-center">
             <svg
               width="50"

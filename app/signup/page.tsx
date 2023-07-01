@@ -48,9 +48,15 @@ export default function SignInOne() {
      
         <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
         <Link href="/">
-        <button>
-          <Image src={backbuttonimg} alt='Go Back' className='w-4 md:w-7 lg:7'/>
-        </button>
+        <div className="flex justify-end">
+              <div>
+                <Image
+                  src={backbuttonimg}
+                  alt="Go Back"
+                  className="w-4 md:w-7 lg:7"
+                />
+              </div>
+            </div>
       </Link>
           <div className="mb-2 flex justify-center">
             <svg
