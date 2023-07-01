@@ -14,7 +14,7 @@ const menuItems: MenuItem[] = [
   },
   {
     name: 'Buy tickets',
-    href: '#',
+    href: '/buy/',
   },
   {
     name: 'About',
