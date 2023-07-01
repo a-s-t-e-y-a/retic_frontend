@@ -18,7 +18,7 @@ const menuItems: MenuItem[] = [
   },
   {
     name: 'About',
-    href: '#',
+    href: '/about/',
   },
 ]
 const buttonText: string = 'Login / signup'
