@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
 npm run build ||
 (
     echo '❌👷🔨❌ Better call Bob... Because your build failed ❌👷🔨❌
@@ -6,4 +9,4 @@ npm run build ||
     false;
 )
 # If everything passes... Now we can commit
-echo '✅✅✅✅ You win this time... I am pushing this now. ✅✅✅✅'
+echo '✅✅✅✅ You win this time... I am pushing this now. ✅✅✅✅'npm test

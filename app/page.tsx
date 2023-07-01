@@ -16,7 +16,8 @@ export default function Index() {
           <div className="font-semibold py-16 underline underline-offset-1">
             <h1>Category 1</h1>
           </div>
-          <div className="flex grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
+          <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+            <CardThree />
             <CardThree />
             <CardThree />
             <CardThree />
@@ -24,7 +25,8 @@ export default function Index() {
           <div className="font-semibold py-16 underline underline-offset-1">
             <h1>Category 2</h1>
           </div>
-          <div className="flex grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
+          <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+            <CardThree />
             <CardThree />
             <CardThree />
             <CardThree />
@@ -32,7 +34,8 @@ export default function Index() {
           <div className="font-semibold py-16 underline underline-offset-1">
             <h1>Category 3</h1>
           </div>
-          <div className="flex grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
+          <div className="mx-auto grid w-full max-w-7xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+            <CardThree />
             <CardThree />
             <CardThree />
             <CardThree />
