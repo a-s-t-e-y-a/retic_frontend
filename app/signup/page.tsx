@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import backbuttonimg from '../icons/backbutton.png'
-
+import toast, { Toaster } from 'react-hot-toast'
 export default function SignInOne() {
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
@@ -16,13 +16,25 @@ export default function SignInOne() {
 
     // Validate email
     if (!isValidEmail(email)) {
-      alert('Please enter a valid email address.')
+      toast.error('Enter the email correctly', {
+        duration: 800,
+        style: {
+          border: '1px solid black',
+          padding: '16px',
+        },
+      })
       return
     }
 
     // Validate password
     if (!isValidPassword(password)) {
-      alert('Password must be at least 6 characters long.')
+      toast.error('Password must be at least 6 characters long.', {
+        duration: 1000,
+        style: {
+          border: '1px solid black',
+          padding: '16px',
+        },
+      })
       return
     }
 
@@ -132,6 +144,7 @@ export default function SignInOne() {
                 >
                   Create Account <ArrowRight className="ml-2" size={16} />
                 </button>
+                <Toaster />
               </div>
             </div>
           </form>
